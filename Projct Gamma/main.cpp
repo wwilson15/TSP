@@ -129,7 +129,7 @@ vector<policy> EA_replicate(vector<policy> P, int popsize, int maxr){
         for(int h=0; h<10; h++){
             //cout << A.solution.at(h) << "\t";
         }
-        cout << endl;
+        //cout << endl;
         int r = rand() % (maxr+1) +1;
         if( r== 1 || r==2){
             r=1;
@@ -217,10 +217,9 @@ void LC(int num_city, int pop_size, int generations){
         if(outputFile.is_open()){
             for(int i=0; i<pop.size(); i++){
                 outputFile << pop.at(i).fitness << "\t";
-                outputFile << "\t";
             }
             
-            outputFile << "\n" << "\n"<< endl;
+            outputFile << "\t" << "\t" <<  endl;
         }
         pop = EA_downselect(pop,pop_size);
         
@@ -263,10 +262,9 @@ void HL2(int pop_size, int generations){
         if(outputFile.is_open()){
             for(int i=0; i<pop.size(); i++){
                 outputFile << pop.at(i).fitness << "\t";
-                outputFile << "\t";
             }
             
-            outputFile << "\n" << "\n"<< endl;
+            outputFile << "\t"<<"\t" << endl;
         }
         
         
@@ -298,10 +296,9 @@ void HL3(int pop_size, int generations){
         if(outputFile.is_open()){
             for(int i=0; i<pop.size(); i++){
                 outputFile << pop.at(i).fitness << "\t";
-                outputFile << "\t";
             }
             
-            outputFile << "\n" << "\n"<< endl;
+            outputFile << "\t"<<"\t" << endl;
         }
         
         
@@ -332,10 +329,9 @@ void HL4(int pop_size, int generations){
         if(outputFile.is_open()){
             for(int i=0; i<pop.size(); i++){
                 outputFile << pop.at(i).fitness << "\t";
-                outputFile << "\t";
             }
             
-            outputFile << "\n" << "\n"<< endl;
+            outputFile << "\t"<<"\t" << endl;
         }
         
         
